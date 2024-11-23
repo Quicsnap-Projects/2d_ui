@@ -1,0 +1,24 @@
+.download-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfdfd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute;  /* Absolute positioning to place it in the top right */
+  top: 50px;  /* Adjust the margin from the top */
+  right: 70px;  /* Adjust the margin from the right */
+}
+
+.download-button:hover {
+  background-color: #555;
+}
+
+.download-icon {
+  width: 24px;
+  height: 24px;
+  color: rgb(87, 87, 87);
+}
