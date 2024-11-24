@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import CompareImageSlider from "./CompareImageSlider"
 import AWS from 'aws-sdk';
 import { Amplify } from 'aws-amplify';
+import awsconfig from './aws-exports';
 
 
 function Image2d() {
