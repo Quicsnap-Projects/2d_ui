@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import CompareImageSlider from "./CompareImageSlider"
 import AWS from 'aws-sdk';
+import { Amplify } from 'aws-amplify';
 
 
 function Image2d() {
@@ -15,6 +16,7 @@ function Image2d() {
   // alert(AWS.config.credentials)
     useEffect(() => {
       // Initialize AWS S3 service
+      Amplify.configure(awsconfig);
       const s3 = new AWS.S3();
   
       // Function to list folders
